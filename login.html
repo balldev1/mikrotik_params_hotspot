@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hotspot Login</title>
+  </head>
+  <body>
+    $(login-by)
+    <script>
+      // https://help.mikrotik.com/docs/display/ROS/Hotspot+customisation
+      // Common server variables:
+      var hostname = "$(hostname)";
+      var identity = "$(identity)";
+      var login_by = "$(login-by)";
+      var plain_passwd = "$(plain-passwd)";
+      var serveraddress = "$(server-address)";
+      var ssl_login = "$(ssl-login)";
+      var server_name = "$(server-name)";
+      // Links:
+      var link_login = "$(link-login)";
+      var link_login_only = "$(link-login-only)";
+      var link_logout = "$(link-logout)";
+      var link_status = "$(link-status)";
+      var link_orig = "$(link-orig)";
+      // General client information:
+      var domain = "$(domain)";
+      var interface_name = "$(interface-name)";
+      var ip = "$(ip)";
+      var logged_in = "$(logged-in)";
+      var mac = "$(mac)";
+      var trial = "$(trial)";
+      var username = "$(username)";
+      var host_ip = "$(host-ip)";
+      var vlan_id = "$(vlan-id)";
+      // User status information:
+      var idle_timeOut = "$(idle-timeout)";
+      var idle_timeout_secs = "$(idle-timeout-secs)";
+      var limit_bytes_in = "$(limit-bytes-in)";
+      var limit_bytes_out = "$(limit-bytes-out)";
+      var refresh_timeout = "$(refresh-timeout)";
+      var refresh_timeout_secs = "$(refresh-timeout-secs)";
+      var session_timeout = "$(session-timeout)";
+      var session_timeout_secs = "$(session-timeout-secs)";
+      var session_time_left = "$(session-time-left)";
+      var session_time_left_secs = "$(session-time-left-secs)";
+      var upTime = "$(uptime)";
+      var upTime_secs = "$(uptime-secs)";
+      // Traffic counters, which are available only on the status page:
+      var bytes_in = "$(bytes-in)";
+      var bytes_in_nice = "$(bytes-in-nice)";
+      var bytes_out = "$(bytes-out)";
+      var bytes_out_nice = "$(bytes-out-nice)";
+      var packets_in = "$(packets-in)";
+      var packets_out = "$(packets-out)";
+      var remain_bytes_in = "$(remain-bytes-in)";
+      var remain_bytes_out = "$(remain-bytes-out)";
+      // Miscellaneous variables:
+      var session_id = "$(session-id)";
+      var variable = "$(var)";
+      var error = "$(error)";
+      var error_orig = "$(error-orig)";
+      var chap_id = "$(chap-id)";
+      var chap_challenge = "$(chap-challenge)";
+      var popup = "$(popup)";
+      var advert_pending = "$(advert-pending)";
+      var http_status = "$(http-status)";
+      var http_header = "$(http-header)";
+      window.location.href =
+        "https://test.test.org/login?" +
+        "hostname=" +
+        hostname +
+        "&identity=" +
+        identity +
+        "&login_by=" +
+        login_by +
+        "&plain_passwd=" +
+        plain_passwd +
+        "&serveraddress=" +
+        serveraddress +
+        "&ssl_login=" +
+        ssl_login +
+        "&server_name=" +
+        server_name +
+        "&link_login=" +
+        link_login +
+        "&link_login_only=" +
+        link_login_only +
+        "&link_logout=" +
+        link_logout +
+        "&link_status=" +
+        link_status +
+        "&link_orig=" +
+        link_orig +
+        "&domain=" +
+        domain +
+        "&interface_name=" +
+        interface_name +
+        "&ip=" +
+        ip +
+        "&logged_in=" +
+        logged_in +
+        "&mac=" +
+        mac +
+        "&trial=" +
+        trial +
+        "&username=" +
+        username +
+        "&host_ip=" +
+        host_ip +
+        "&vlan_id=" +
+        vlan_id +
+        "&idle_timeOut=" +
+        idle_timeOut +
+        "&idle_timeout_secs=" +
+        idle_timeout_secs +
+        "&limit_bytes_in=" +
+        limit_bytes_in +
+        "&limit_bytes_out=" +
+        limit_bytes_out +
+        "&refresh_timeout=" +
+        refresh_timeout +
+        "&refresh_timeout_secs=" +
+        refresh_timeout_secs +
+        "&session_timeout=" +
+        session_timeout +
+        "&session_timeout_secs=" +
+        session_timeout_secs +
+        "&session_time_left=" +
+        session_time_left +
+        "&session_time_left_secs=" +
+        session_time_left_secs +
+        "&upTime=" +
+        upTime +
+        "&upTime_secs=" +
+        upTime_secs +
+        "&bytes_in=" +
+        bytes_in +
+        "&bytes_in_nice=" +
+        bytes_in_nice +
+        "&bytes_out=" +
+        bytes_out +
+        "&bytes_out_nice=" +
+        bytes_out_nice +
+        "&packets_in=" +
+        packets_in +
+        "&packets_out=" +
+        packets_out +
+        "&remain_bytes_in=" +
+        remain_bytes_in +
+        "&remain_bytes_out=" +
+        remain_bytes_out +
+        "&variable=" +
+        variable +
+        "&error=" +
+        error +
+        "&error_orig=" +
+        error_orig +
+        "&chap_id=" +
+        chap_id +
+        "&chap_challenge=" +
+        chap_challenge +
+        "&popup=" +
+        popup +
+        "&advert_pending=" +
+        advert_pending +
+        "&http_status=" +
+        http_status +
+        "&http_header=" +
+        http_header;
+    </script>
+  </body>
+</html>
